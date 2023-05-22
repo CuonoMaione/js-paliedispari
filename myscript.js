@@ -13,6 +13,7 @@ buttonPali.addEventListener("click" , function (){
 })
 
 
+
 /*FUNZIONE */
 function checkpalindromeword(word) {
 
@@ -27,9 +28,29 @@ for (let i = word.length; i > -1; i--){
 if (result != word) {
 
     document.getElementById("check").innerHTML = "THE WORD ISN'T PALINDROME"
+    
 
 } else {
     document.getElementById("check").innerHTML = "THE WORD IS PALINDROME"
+    
 }
 
 }
+
+
+
+/* ODD OR EVEN*/
+
+const userChoice = prompt("even or odd?");
+const userNumber = parseInt(prompt("select number from 1 to 5"));
+const randomNumber = parseInt(Math.floor(Math.random() * (5) + 1));
+let sum = userNumber + randomNumber
+
+if (sum % 2 === 0 && userChoice === "even" || sum % 2 != 0 && userChoice === "odd") {
+    console.log("you have win")
+} else {
+    console.log("you have loose")
+}
+
+console.log(userChoice,userNumber,randomNumber,sum)
+
