@@ -1,0 +1,55 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: black;
+    height: 100vh;
+    text-align: center;
+    font-size: 2rem;
+    color: yellow;
+}
+
+h1,p,button{
+    margin-bottom: 2rem;
+}
+
+h1{
+    padding-top: 1rem;
+}
+
+button{
+    padding:1rem;
+    border: 5px red solid;
+    border-radius: 50%;
+    background-color: black;
+    color: yellow;
+}
+
+input{
+    padding: 0.5rem;
+    border: 5px red solid;
+    border-radius: 10px;
+    background-color: black;
+    color: yellow;
+}
+
+button:hover,
+input:hover{
+    filter: drop-shadow(16px 16px 20px red) invert(75%);
+}
+
+
+#check{
+    border: red 6px solid;
+    color: yellow;
+    background-color: black;
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 10px;
+}

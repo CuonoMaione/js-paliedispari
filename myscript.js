@@ -1,13 +1,20 @@
 
 
-let userWord = prompt("insert a word")
+const buttonPali = document.getElementById("buttonpalindrome");
 
-checkpalidromeword(userWord)
 
+
+buttonPali.addEventListener("click" , function (){
+
+    let userWord = (document.getElementById("userword")).value
+
+    checkpalindromeword(userWord)
+
+})
 
 
 /*FUNZIONE */
-function checkpalidromeword(word) {
+function checkpalindromeword(word) {
 
 let result = ""
     
@@ -19,9 +26,10 @@ for (let i = word.length; i > -1; i--){
 
 if (result != word) {
 
-    console.log("La parola non è Palidroma");
+    document.getElementById("check").innerHTML = "THE WORD ISN'T PALINDROME"
+
 } else {
-    console.log("La parola è Palidroma")
+    document.getElementById("check").innerHTML = "THE WORD IS PALINDROME"
 }
 
 }
