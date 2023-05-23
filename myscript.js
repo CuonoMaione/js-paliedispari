@@ -19,13 +19,13 @@ function checkpalindromeword(word) {
 
 let result = ""
     
-for (let i = word.length; i > -1; i--){
+for (let i = word.length -1; i > -1; i--){
     
     result += word.charAt(i);
 
 }
 
-if (result != word) {
+if (result.toLowerCase() != word.toLowerCase()) {
 
     document.getElementById("check").innerHTML = "THE WORD ISN'T PALINDROME"
     
